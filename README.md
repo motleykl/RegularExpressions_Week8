@@ -16,6 +16,8 @@ After importing `re`, you can search for a particular pattern of text in a strin
 
 `re.search(r"ttt","aggtttcctttagttt")`
 
+can use variable name as second argument
+
 The letter `r` that appears before the search pattern tells Python that you're searching for raw text. You'll pretty much always want to use it, so just get in the habit of having it there. If the pattern is found, the `search` function will return an `re.Match` object. If the pattern is not found, it will return the value `None`.  You can use this to execute an `if...else` statement
 
 ```
@@ -60,6 +62,8 @@ print(allMatches)
 `re.findall()` returns a list of strings, where each element is a separate match from our search.
 
 There are many other wildcard characters beyond `.`.
+
+backslash says itll be a special pattern
 
 `\w` - Matches a 'word' character, which includes all letters (both uppercase and lowercase) and numbers
 
@@ -137,6 +141,8 @@ Repetition characters can also be used in combination with wildcards.
 match = re.search(r"C.+G","GCTTTGGAAAGG")
 match.group()
 ```
+
+all of these can be combined
 
 ## Capturing Text from Searches
 
