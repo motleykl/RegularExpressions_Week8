@@ -79,7 +79,7 @@ backslash says itll be a special pattern
 
 `$` - Matches the end of the string
 
-Often, using an uppercase letter in place of a lowercase letter reverses the nature of the wildcard. For instance, `\S` matches any __non__-whitespace character and `\W` matches any __non__-word character.
+Often, using an uppercase letter in place of a lowercase letter reverses the nature of the wildcard. For instance, `\S` matches any __non__-whitespace character and `\W` matches any __non__-word character. good if looking for inverse (converse?) of something
 
 You can also create any custom wildcard that you want by putting the characters that you want to match inside square brackets. For example, here we're using wildcards to match an even number followed by an odd number. Note that the brackets themselves are __not__ part of the search. 
 
